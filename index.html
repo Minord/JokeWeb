@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Diego Project</title>
+</head>
+<body>
+	<style type="text/css">
+		.Bait {
+		  position: fixed;
+		  right: 5px;
+		  bottom: 5px;
+		  border-radius: 50%;
+		  width: 60px;
+		  height: 60px;
+		  border-style: none;
+		  background-color: #00ff44;
+		}
+
+		.Bait:active {
+		  scale: 1.2;
+		  background-color: #22ff99;
+		}
+
+		.mid {
+		  padding-top: 100px;
+		  text-align: center;
+		}
+
+		.meme{
+		  position: absolute;
+		  z-index: -10;
+		}
+	</style>
+
+	<img class="meme"src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fresenhasalacarte.com.br%2Fwp-content%2Fuploads%2F2015%2F07%2Fmeme-o-que-queremos.png&f=1&nofb=1"</img>
+	<div class="mid">
+	<h1> Dele al boton maje</h1>
+	<h3 id="counter-view">0/10 touchs</h3>
+	</div>
+	<button class="Bait" onclick="trollBottom()"> Click </button>
+
+	<script type="text/javascript">
+		var counter = 0;
+		var trollurl = "https://api.whatsapp.com/send?phone=50361568491&time=1622652834&text=%CE%92%CE%B9cha+S%CE%B1li+D%E2%84%AFl%0D%0ACl%C3%B8s%E2%84%AFt+%3A3+%E2%9D%A4%EF%B8%8F%E2%9D%A4%EF%B8%8F%0D%0A%0D%0A%0D%0A%F0%9F%91%81++++++++++++++++%F0%9F%91%81%0D%0A%0D%0A++++++++++%F0%9F%91%83%0D%0A%0D%0A++++++++++%F0%9F%91%85%0D%0AEnviar+%5C%EF%BB%BF+%28%E2%80%A2%E2%97%A1%E2%80%A2%29+%2F";
+
+		var counter_elem = document.getElementById("counter-view");
+
+		function counterView(counter){
+		  counter_elem.innerText = counter + "/10 touchs";
+		}
+
+		function trollBottom(){
+		  counter++;
+		  if (counter == 8){
+		    window.open();
+		  }
+		  counterView(counter);
+		}
+	</script>
+</body>
+</html>
